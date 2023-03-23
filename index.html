@@ -10,20 +10,22 @@
 <body>
 
     <main>
-        <form>
+        <form id="formulario">
             <h1>Calculo de IMC</h1>
             <hr>
             <p>Insira seu Peso (KG)</p>
-            <input type="number" placeholder="Exem: 55">
-            <hr>
+            <input id="pes" type="number" placeholder="Exem: 55">
+          
             <p>Insira sua Altura (Metros)</p>
-            <input type="number" placeholder="Exem: 160.5">
-            
-            <button type="button">Calcular</button>
+            <input id="alt" type="number" step="any" placeholder="Exem: 160.5 (use ponto para separar casas decimais)">
             <br>
-            <p>result</p>
+            <button class="bt" type="submit">Calcular</button>
+            <br>
+            <section id="it" class="it"><p>Valor calculado IMC = <span class="result" id="valor"></span></form></p>
+            
+            <p id="final" class="result"></p></section>
         </form>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
